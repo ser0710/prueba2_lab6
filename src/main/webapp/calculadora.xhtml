@@ -16,13 +16,13 @@
         <p:outputLabel value="Mode: #{calculadoraBean.resModa}" style="display:none"></p:outputLabel>
         </p:outputPanel>
 		<p:outputPanel>
-        <p:outputLabel value="Variance: #{calculadoraBean.resVarianza}"></p:outputLabel>
+        <p:outputLabel value="Variance: #{calculadoraBean.resVarianza}" color="cyan"></p:outputLabel>
         </p:outputPanel>
         <p:outputPanel>
-        <p:outputLabel value="Standard Deviation: #{calculadoraBean.resDesvEstandar}"></p:outputLabel>
+        <p:outputLabel value="Standard Deviation: #{calculadoraBean.resDesvEstandar}" color="green"></p:outputLabel>
         </p:outputPanel>
         <p:outputPanel>
-        <p:outputLabel value="Mean: #{calculadoraBean.resPromedio}"></p:outputLabel>
+        <p:outputLabel value="Mean: #{calculadoraBean.resPromedio}" color="lime"></p:outputLabel>
         </p:outputPanel>
 		<p:commandButton value="Mode" update="calculadora_form" action="#{calculadoraBean.calculateMode()}"></p:commandButton>
 		<p:commandButton value="Variance" update="calculadora_form" action="#{calculadoraBean.calculateVariance()}"></p:commandButton>
